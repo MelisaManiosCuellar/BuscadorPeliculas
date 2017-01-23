@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+
+    <title>Buscador de Películas</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+<!-- Start your project here-->
+<div class="modal"></div>
+
+<nav class="navbar navbar-fixed-top navbar-light bg-faded animated fadeInDown">
+    <h6 class="navbar-brand">Buscador de Peliculas</h6>
+    <a class="navbar-text col-md-2" href="#" id="mostrarTodas">Mostrar Todas</a>
+    <a class="navbar-text col-md-2" href="index.html">Buscador</a>
+</nav>
+<h1>&nbsp</h1>
+<h1>&nbsp</h1>
+<h1>&nbsp</h1>
+
+<div class="container buscador">
+
+    <form id="formBuscar">
+        <!--First row-->
+        <div class="row">
+            <!--First column-->
+            <div class="col-md-12 animated fadeInUpBig">
+                <div class="md-form">
+                    <i class="fa fa-film prefix"></i>
+                    <input type="text" id="peli" class="form-control">
+                    <label for="peli">Título de la Película (requerido)</label>
+                </div>
+            </div>
+        </div>
+
+        <!--Second column-->
+        <div class="row">
+            <div class="col-md-12 animated fadeInUpBig">
+                <div class="md-form">
+                    <i class="fa fa-calendar prefix"></i>
+                    <input type="text" id="anio" class="form-control">
+                    <label for="anio">Año Película</label>
+                </div>
+            </div>
+        </div>
+
+        <!--/.First row-->
+
+
+        <!--third Row-->
+        <div class="row">
+            <div class="col-md-12 animated fadeInUpBig">
+                <a class="btn btn-default btn-block btn-mdb" id="boton"><i class="fa fa-search left"></i> Buscar</a>
+            </div>
+        </div>
+        <!--/.third Row-->
+
+    </form>
+</div>
+<br>
+
+<div class="container pelis">
+
+</div>
+<div class="container">
+    <div class="card card-danger text-xs-center z-depth-2 animated fadeIn" id="notFound">
+        <div class="card-block">
+            <p class="white-text">No se ha encontrado la película.</p>
+        </div>
+    </div>
+
+
+
+</div>
+<!---->
+
+<!-- /Start your project here-->
+
+
+<!-- SCRIPTS -->
+
+<!-- JQuery -->
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/tether.min.js"></script>
+
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+
+<!--Proyect File-->
+<script src="js/OMDB_proyect.js"></script>
+
+</body>
+
+</html>
