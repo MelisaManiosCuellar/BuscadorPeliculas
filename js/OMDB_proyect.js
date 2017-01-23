@@ -4,7 +4,7 @@ $("document").ready(function () {
 
     $("#mostrarTodas").click(function(){
         $("#peli").val("a");
-        $.get("http://www.omdbapi.com/?s=a&y=&plot=short&r=json&type=movie&page=1", function (data, status) {
+        $.get("https://www.omdbapi.com/?s=a&y=&plot=short&r=json&type=movie&page=1", function (data, status) {
             if (status == "success") {
                 $("#loader").hide();
                 mostrarResultados(data);
@@ -46,7 +46,7 @@ function buscar() {
 function peticionAjax(pagina){
     var peli = $("#peli").val();
     var anio = $("#anio").val();
-    $.get("http://www.omdbapi.com/?s=" + peli + "&y=" + anio + "&plot=short&r=json&type=movie&page="+pagina, function (data, status) {
+    $.get("https://www.omdbapi.com/?s=" + peli + "&y=" + anio + "&plot=short&r=json&type=movie&page="+pagina, function (data, status) {
         if (status == "success") {
             /*$("#loader").hide();*/
             mostrarResultados(data);
