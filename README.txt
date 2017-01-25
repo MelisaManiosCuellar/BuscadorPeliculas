@@ -1,4 +1,8 @@
-Buscador de Peliculas.
+Buscador de Peliculas. Hecho con Jquery, javascript, omdb api y material design bootstrap.
+
+
+https://ratholien.github.io/BuscadorPeliculas/
+
 
 OMDB API 
 
